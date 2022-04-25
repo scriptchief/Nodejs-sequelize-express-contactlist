@@ -1,0 +1,32 @@
+
+{{#if user}}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/contacts">|--ContactApp--|</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="/contacts/add">Add Contact <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="/contacts">Contacts</a>
+                <a class="nav-item nav-link active" href="/profile">Profile</a>
+            </div>
+            <a class="nav-item nav-link btn-outline-primary mr-5" href="/logout">Logout</a>
+        </div>
+    </nav>
+{{else}}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/contacts">|--ContactList--|</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="/signIn">SignIn <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="/signUp">SignUp</a>
+            </div>
+        </div>
+    </nav>
+{{/if}}

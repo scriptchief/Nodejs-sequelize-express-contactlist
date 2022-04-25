@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Bayram.19",
+    "database": "contacts",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "Bayram.19",
+    "database": "contacts",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "Bayram.19",
+    "database": "contacts",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}

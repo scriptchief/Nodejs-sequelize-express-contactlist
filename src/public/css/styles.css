@@ -1,0 +1,60 @@
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+/* SIGNIN AND SIGNUP  */
+.contenedor-principal {
+    display: flex;
+}
+
+.imagen {
+    height: 100vh;
+    background-image: url('/img/fondoLogin.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 2.5;
+}
+
+.signUp {
+    height: 100vh;
+    background-image: url('/img/fondoSignUp.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 2.5;
+}
+
+.formulario-login {
+    flex: 1;
+    font-family: 'Oswald', sans-serif;
+}
+
+.contenedor {
+    width: 95%;
+    margin: 4rem auto;
+    padding: 2rem 2rem;
+}
+
+.contenido-formulario h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.contenido-formulario label {
+    font-weight: 700;
+}
+
+
+/* NAVIGATE */
+.collapse {
+    display: flex;
+    justify-content: space-between;
+}

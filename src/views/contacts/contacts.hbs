@@ -1,0 +1,26 @@
+<div class="container p-4">
+    <div class="row">
+
+        {{#each arraycontact}}  <!-- contacts controller içerisinde veri dizimize değer geldi mi kontrol edelim -->
+            <div class="col-md-3">
+                <div class="card text-center border border-info mb-4">
+                    <div class="card-body">
+                        <h4 class="card-title text-center mt-4 mb-4 text-uppercase">{{number}}</h4>
+                        <h5 class="m-2 text-uppercase">|-- {{company}} --|</h5>
+                        <p class="m-2">{{telephone}}</p>
+                        <p>{{timeago createdAt}}</p>
+                        <a href="/contacts/delete/{{id}}" class="btn btn-danger">Delete Contact</a>
+                        <a href="/contacts/edit/{{id}}" class="btn btn-secondary">Edit</a>
+                    </div>
+                </div>
+            </div>
+        {{else}}  <!-- eğer dizimiz boş ise veri ekleme sayfasına yönlendirelim -->
+            <div class="col-md-4 mx-auto">
+                <div class="card card-body text-center">
+                    <p>There are not contacts saved yet.</p>
+                    <a href="/contacts/add" class="btn btn-primary">Create One</a>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
